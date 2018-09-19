@@ -39,9 +39,11 @@ jspm_packages
 # Built files
 govuk/login/resources/
 govuk-internal/login/resources/
+govuk-social-providers/resources/
 dist/
 
 # npm package-lock.json file (because maybe it has issues? https://github.com/npm/npm/issues/18144, https://github.com/npm/npm/issues/18375)
 package-lock.json
 
+# postgres data directory
 data/
