@@ -41,12 +41,17 @@ The theme will then be built at `/govuk`, ready for use in the local Keycloak se
 ### Local Keycloak server
 A local Keycloak server for developing and testing the theme is available as a Docker container.
 
+> If you are running a projects on OSX from outside the `/Users` directory enable file sharing for your project under `Docker > Preferences > File Sharing` adding your directory then using `Apply & Restart`
+
 To bring up the server, make sure you’ve installed and started [Docker Community Edition](https://docs.docker.com/engine/installation/), then use the following commands:
 ```bash
 $ npm install
 $ npm run build
 $ docker-compose up
 ```
+
+> You can confirm the server has fully started by looking under `docker logs keycloak` to see the line e.g.  `12:40:14,999 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0025: Keycloak 4.3.0.Final (WildFly Core 3.0.8.Final) started in 39745ms - Started 546 of 882 services (604 services are lazy, passive or on-demand)`
+
 The Keycloak server will now be available on <http://localhost:8080>. You can log into the Administration Console using “**admin**” as both username and password.
 
 <img alt="" src="docs/images/keycloak-local.png" width="512" height="300">
