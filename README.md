@@ -78,6 +78,10 @@ To set up the local Keycloak server to send e-mails to MailDev:
 
     It doesn’t matter what e-mail address you add, as all e-mails will be caught by MailDev. But you do need to add one, otherwise Keycloak will not send e-mails for this account.
 
+    > At this point server sent verification email but being still logged in, I couldn't verify.  [Logout](http://localhost:8080/auth/realms/master/protocol/openid-connect/logout) if this happens.
+
+    > Email address can be used to login after this change.
+
 The local Keycloak server should now be set up to send e-mails to MailDev. To check that it’s working:
 
 1. Click on the “Back to Security Admin Console” link
